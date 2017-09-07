@@ -30,8 +30,8 @@ public class LoginTest {
     @Test
     public void loginTest(){
         driver.get("https://test.com");
-        driver.findElement(By.xpath(".//*[@id='usernamefield']")).sendKeys("msptest");
-        driver.findElement(By.xpath(".//*[@id='passwordfield']")).sendKeys("qa!23456");
+        driver.findElement(By.xpath(".//*[@id='usernamefield']")).sendKeys("test");
+        driver.findElement(By.xpath(".//*[@id='passwordfield']")).sendKeys("test123456");
         driver.findElement(By.xpath(".//*[@class='btn btn-success m-t-xl p-sm p-t-md floatright']")).click();
         driver.findElement(By.xpath(".//*[@name='reqCreateWidget']")).isDisplayed();
     }
